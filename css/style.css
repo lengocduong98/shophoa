@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+.banner{
+    background-image: url('../images/Untitled-1.jpg');
+    height: 350px;
+}
+.textbanner{
+    
+    margin-left: 15px; 
+    color: red;
+}
+
+.textb2{
+    margin-top: -20px;
+    font-family: 'Dokdo', cursive;
+    font-size: 500%;
+    margin-left: 20px;
+}
+.intro{
+    
+    height: 120px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.textintro{
+    
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+}
+.mautron{
+    background-image: url('../images/Untitled-1.jpg');
+    
+}
+.textp{
+    text-align: center;
+    font-size: 25px;
+}
+.texttable{
+    text-align: center;
+}
+.tableimg{
+    margin-top: 7px;
+}
+.bgfooter{
+    background-color: steelblue; 
+}
+.textpfooter{
+    font-size: 20px;
+}
+.li{
+    list-style: none;
+}
+
+.li-con{
+    margin-left: 10px;
+}
+.cuoi{
+    text-align: center;
+}
+.footertong{
+    margin-left: 5px;
+    margin-right: 10px;
+}
