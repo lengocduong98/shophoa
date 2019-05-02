@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Dokdo');
-.banner{
+/* .banner{
     background-image: url('../images/Untitled-1.jpg');
     height: 350px;
-}
+} */
+
 .textbanner{
     
     margin-left: 15px; 
@@ -12,10 +13,17 @@
 }
 
 .textb2{
-    margin-top: -20px;
+    /* margin-top: -20px; */
     font-family: 'Dokdo', cursive;
     font-size: 500%;
-    margin-left: 20px;
+    color: red;
+    /* margin-left: 20px; */
+}
+.menunu{
+    
+    top: 0;
+    z-index: 1071;
+    background-color: #00CCFF;
 }
 .intro{
     
@@ -23,16 +31,23 @@
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
-
+.divz{
+	position: relative;
+}
+.textz{
+	bottom: 35%; 
+	position: absolute;
+	
+}
 .textintro{
     
     color: rgb(0, 0, 0);
     margin-top: 5px;
 }
-.mautron{
+/* .mautron{
     background-image: url('../images/Untitled-1.jpg');
     
-}
+} */
 .textp{
     text-align: center;
     font-size: 25px;
@@ -63,3 +78,104 @@
     margin-left: 5px;
     margin-right: 10px;
 }
+.anh{
+    height: 50px;
+    font-weight: 50px;
+}
+.lop{
+    background-color: #66FFCC;
+}
+.lienhe{
+    background-color: #00FFCC;
+}
+/* product-begin */
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+.card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-product .price-old {
+    color: #999;
+}
+/* product-end */
+.giohang{
+    margin-right: 5px;
+}
+/* menulogin begin */
+body{
+    background:url(../images/nen.jpg);
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+/* menulogin end  */
