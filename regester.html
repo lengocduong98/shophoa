@@ -7,60 +7,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"  />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
-      <div class="container">
-    <form class="form-horizontal" action='' method="POST">
-        <fieldset>
-          <div id="legend">
-            <legend class="">Register</legend>
+    <div class="container">
+      <form class="form-horizontal" role="form" method="POST" action="/register">
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                  <h2>Register New User</h2>
+                  <hr>
+              </div>
           </div>
-          <div class="control-group">
-            <!-- Username -->
-            <label class="control-label"  for="username">Username</label>
-            <div class="controls">
-              <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-              <p class="help-block">Username can contain any letters or numbers, without spaces</p>
-            </div>
+          <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                  <label for="name">Name</label>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                          <input type="text" name="name" class="form-control" id="name"
+                                 placeholder="John Doe" required autofocus>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-control-feedback">
+                          <span class="text-danger align-middle">
+                              <!-- Put name validation error messages here -->
+                          </span>
+                  </div>
+              </div>
           </div>
-       
-          <div class="control-group">
-            <!-- E-mail -->
-            <label class="control-label" for="email">E-mail</label>
-            <div class="controls">
-              <input type="text" id="email" name="email" placeholder="" class="input-xlarge">
-              <p class="help-block">Please provide your E-mail</p>
-            </div>
+          <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                  <label for="email">E-Mail Address</label>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                          <input type="text" name="email" class="form-control" id="email"
+                                 placeholder="you@example.com" required autofocus>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-control-feedback">
+                          <span class="text-danger align-middle">
+                              <!-- Put e-mail validation error messages here -->
+                          </span>
+                  </div>
+              </div>
           </div>
-       
-          <div class="control-group">
-            <!-- Password-->
-            <label class="control-label" for="password">Password</label>
-            <div class="controls">
-              <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
-              <p class="help-block">Password should be at least 4 characters</p>
-            </div>
+          <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                  <label for="password">Password</label>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group has-danger">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                          <input type="password" name="password" class="form-control" id="password"
+                                 placeholder="Password" required>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="form-control-feedback">
+                          <span class="text-danger align-middle">
+                              <i class="fa fa-close"> Example Error Message</i>
+                          </span>
+                  </div>
+              </div>
           </div>
-       
-          <div class="control-group">
-            <!-- Password -->
-            <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-            <div class="controls">
-              <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-              <p class="help-block">Please confirm password</p>
-            </div>
+          <div class="row">
+              <div class="col-md-3 field-label-responsive">
+                  <label for="password">Confirm Password</label>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                          <div class="input-group-addon" style="width: 2.6rem">
+                              <i class="fa fa-repeat"></i>
+                          </div>
+                          <input type="password" name="password-confirmation" class="form-control"
+                                 id="password-confirm" placeholder="Password" required>
+                      </div>
+                  </div>
+              </div>
           </div>
-       
-          <div class="control-group">
-            <!-- Button -->
-            <div class="controls">
-              <button class="btn btn-success">Register</button>
-            </div>
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                  <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+              </div>
           </div>
-        </fieldset>
       </form>
-    </div>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
