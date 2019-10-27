@@ -17,7 +17,7 @@
       
       <nav class="navbar navbar-expand-sm navbar-light text-white menunu position-fixed fixed-top">
           <!-- <div class="" > -->
-              
+             <div class="container">
             <img src="images/logo.png" height="40px" width="40px" style="margin-right: 2%;">
           <a class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -106,13 +106,13 @@
               </form>
               
           </div>
-        
+        </div>
         <!-- </div> -->
       </nav>
       <!-- nav end -->
 
       <!-- container begin-->
-      <div class="container-fluid">
+      <div class="container">
           <!-- banner begin -->
           <div class="bd-example">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -492,6 +492,14 @@
                 </div>
             </div>
             <!-- contact end -->
+
+            <!-- button fb begin -->
+            <div class="call-fb">
+              <a id="callnowbutton" href="https://www.facebook.com/nduong07.wave" target="_blank">
+                  <i class="fab fa-facebook-f">F</i> Chat Facebook  
+              </a>
+          </div>
+            <!-- button fb end -->
     </div>
      <!-- container end -->
      <br> 
@@ -574,20 +582,20 @@
       <div class="col-md-2 mx-auto">
 
         <!-- Links -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Agency</h5>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LIÊN KẾT</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">DaNang city</a>
+            <a href="#!">Tài Khoản</a>
           </li>
           <li>
-            <a href="#!">HCM city</a>
+            <a href="#!">Giỏ Hàng</a>
           </li>
           <li>
-            <a href="#!">Hue city</a>
+            <a href="#!">Liên Hệ</a>
           </li>
           <li>
-            <a href="#!">QuangNam province</a>
+            <a href="#!">Chính Sách Bảo Mật</a>
           </li>
         </ul>
 
